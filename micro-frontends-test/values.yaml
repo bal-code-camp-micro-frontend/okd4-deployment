@@ -1,4 +1,4 @@
-okd4-demo:
+demo:
   image:
     repository: registry.baloise.dev/example/gitops-nginx-demo
     tag: latest
@@ -7,4 +7,4 @@ okd4-demo:
     http:
       servicePort: 8080
       ingress:
-        host: bvcc2020-demo-test.apps.baloise.dev
+        host: demo-micro-frontends-test.apps.baloise.dev
