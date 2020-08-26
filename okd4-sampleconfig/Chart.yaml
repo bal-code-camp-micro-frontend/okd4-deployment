@@ -1,0 +1,8 @@
+apiVersion: v2
+name: okd4-sampleconfig
+version: 1.0.0
+dependencies:
+  - name: generic-chart
+    version: 2.0.0
+    repository: https://registry.baloise.dev/chartrepo/library
+    alias: okd4-demo
