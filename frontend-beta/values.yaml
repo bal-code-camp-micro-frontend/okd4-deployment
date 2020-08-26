@@ -1,0 +1,10 @@
+frontend:
+  image:
+    repository: balcodecampmicrofrontend/frontend-beta
+    tag: 08e50c071a7941ec14b4dc51af51a95059f4cd40
+  replicaCount: 1
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: frontend-beta-micro-frontends-test.apps.baloise.dev
