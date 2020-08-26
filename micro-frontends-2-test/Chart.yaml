@@ -1,8 +1,0 @@
-apiVersion: v2
-name: micro-frontends-2-test
-version: 1.0.0
-dependencies:
-  - name: generic-chart
-    version: 2.0.0
-    repository: https://registry.baloise.dev/chartrepo/library
-    alias: demo
