@@ -1,7 +1,7 @@
 frontend:
   image:
     repository: balcodecampmicrofrontend/frontend-alpha
-    tag: f03910565448017c5393ab85812e4afab4cc1b6d
+    tag: 570fe1cb2ee016787aaae9ffbcf4712833360c2a
   replicaCount: 1
   network:
     http:
