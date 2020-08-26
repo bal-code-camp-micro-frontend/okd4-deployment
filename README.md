@@ -11,7 +11,7 @@ apps: [![App Status](https://argocd.baloise.dev/api/badge?name=okd4-bal-code-cam
 
 |namespace|status
 |-|-|
-|micro-frontends-test|[![App Status](https://argocd.baloise.dev/api/badge?name=micro-frontends-test&revision=true)](https://argocd.baloise.dev/applications/micro-frontends-test)|
+|frontend-alpha|[![App Status](https://argocd.baloise.dev/api/badge?name=frontend-alphat&revision=true)](https://argocd.baloise.dev/applications/frontend-alpha)|
 
 ## Adding/Removing New Namespaces
 Just add/remove a folder. Every git push triggers a sync and the new namespaces are added in the [Application Root Config Repo YAML](https://github.com/baloise-incubator/okd4-apps-root-config/blob/master/apps/okd4-bal-code-camp-micro-frontend-apps.yaml).
