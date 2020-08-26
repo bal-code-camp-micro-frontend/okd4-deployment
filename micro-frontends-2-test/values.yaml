@@ -1,0 +1,10 @@
+demo:
+  image:
+    repository: registry.baloise.dev/example/gitops-nginx-demo
+    tag: latest
+  replicaCount: 1
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: demo-micro-frontends-2-test.apps.baloise.dev
