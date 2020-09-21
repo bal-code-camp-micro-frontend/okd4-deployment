@@ -18,4 +18,4 @@ frontend:
       port: 8080
   env:
   - name: DETAIL_URL
-    value: https://kwik-e-detail.apps.baloise.dev
+    value: https://kwik-e-proxy.apps.baloise.dev/
