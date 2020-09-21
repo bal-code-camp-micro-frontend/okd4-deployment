@@ -8,3 +8,11 @@ frontend:
       servicePort: 8080
       ingress:
         host: kwik-e-detail.apps.baloise.dev
+  readinessProbe:
+    httpGet:
+      path: /actuator/health
+      port: 8080
+  livenessProbe:
+    httpGet:
+      path: /actuator/health
+      port: 8080
