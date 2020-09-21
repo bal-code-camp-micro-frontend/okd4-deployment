@@ -1,10 +1,13 @@
 frontend:
   image:
     repository: balcodecampmicrofrontend/kwik-e-list
-    tag: 10cce2ecf4575530d9e8a587b5602ec956e07f7b
+    tag: 31115896f1e54dd9bba8b033efd3d97cab7c75f9
   replicaCount: 1
   network:
     http:
       servicePort: 8080
       ingress:
         host: kwik-e-list.apps.baloise.dev
+  env:
+  - name: DETAIL_URL
+    value: https://kwik-e-detail.apps.baloise.dev
