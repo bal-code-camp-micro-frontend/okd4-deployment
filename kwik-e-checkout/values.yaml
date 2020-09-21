@@ -1,10 +1,10 @@
 frontend:
   image:
-    repository: balcodecampmicrofrontend/kwik-e-list
+    repository: balcodecampmicrofrontend/kwik-e-checkout
     tag: eefbd17a41cf9efed64b0fc535e43b7e300fe2b3
   replicaCount: 1
   network:
     http:
       servicePort: 8080
       ingress:
-        host: kwik-e-list.apps.baloise.dev
+        host: kwik-e-checkout.apps.baloise.dev
