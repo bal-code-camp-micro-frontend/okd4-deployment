@@ -16,6 +16,3 @@ frontend:
     httpGet:
       path: /healthz
       port: 8080
-  env:
-  - name: DETAIL_URL
-    value: https://kwik-e-proxy.apps.baloise.dev/
