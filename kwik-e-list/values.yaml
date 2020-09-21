@@ -1,0 +1,10 @@
+kwik-e-list:
+  image:
+    repository: balcodecampmicrofrontend/kwik-e-list
+    tag: 2d779ef34561cdda82a3a460f9c1823e6c10417b
+  replicaCount: 1
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: kwik-e-list-micro-frontends-test.apps.baloise.dev
