@@ -8,6 +8,14 @@ frontend:
       servicePort: 8080
       ingress:
         host: kwik-e-list.apps.baloise.dev
+  readinessProbe:
+    httpGet:
+      path: /healthz
+      port: 8080
+  livenessProbe:
+    httpGet:
+      path: /healthz
+      port: 8080
   env:
   - name: DETAIL_URL
     value: https://kwik-e-detail.apps.baloise.dev
