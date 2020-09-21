@@ -1,9 +1,0 @@
-frontend:
-  image:
-    repository: balcodecampmicrofrontend/frontend-alpha
-    tag: PLACEHOLDER
-  network:
-    http:
-      servicePort: 8080
-      ingress:
-        host: PLACEHOLDER
