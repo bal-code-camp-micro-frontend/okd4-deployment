@@ -1,0 +1,10 @@
+proxy:
+  image:
+    repository: balcodecampmicrofrontend/kwik-e-proxy
+    tag: c7802ae6621c63f9bd554e4c10aa1fcbcfb22a59
+  replicaCount: 1
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: kwik-e-proxy.apps.baloise.dev
