@@ -8,3 +8,11 @@ proxy:
       servicePort: 8080
       ingress:
         host: kwik-e-proxy.apps.baloise.dev
+  readinessProbe:
+    httpGet:
+      path: /healthz
+      port: 8080
+  livenessProbe:
+    httpGet:
+      path: /healthz
+      port: 8080
