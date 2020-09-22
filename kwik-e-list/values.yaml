@@ -1,7 +1,7 @@
 frontend:
   image:
     repository: balcodecampmicrofrontend/kwik-e-list
-    tag: 61bbf01557dc4a8706c90e9fbc35e2389c0dc814
+    tag: 78f8eeb0b4e5b9ec1af91edd41e2b466ddb7145c
   replicaCount: 1
   network:
     http:
