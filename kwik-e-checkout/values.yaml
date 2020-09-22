@@ -1,7 +1,7 @@
 frontend:
   image:
     repository: balcodecampmicrofrontend/kwik-e-checkout
-    tag: 4863accd4dff4f10fa135d69c15cfee16f938e71
+    tag: 3c50930f3a4f38253a221676fe7d2174b552b00d
   replicaCount: 1
   network:
     http:
