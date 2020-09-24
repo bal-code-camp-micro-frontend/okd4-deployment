@@ -1,0 +1,18 @@
+api:
+  image:
+    repository: balcodecampmicrofrontend/kwik-e-api
+    tag: 5e268a5ab4912c791a43f875b6e693bdea03fcf3
+  replicaCount: 1
+  network:
+    http:
+      servicePort: 3003
+      ingress:
+        host: kwik-e-api.apps.baloise.dev
+  readinessProbe:
+    httpGet:
+      path: /healthz
+      port: http
+  livenessProbe:
+    httpGet:
+      path: /healthz
+      port: http
