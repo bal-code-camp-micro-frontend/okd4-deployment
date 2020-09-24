@@ -1,7 +1,7 @@
 proxy:
   image:
     repository: balcodecampmicrofrontend/kwik-e-proxy
-    tag: ba7d0090832f5a4c7ed704728b6ab21d483d9c60
+    tag: b0e51e9f747762da8806e9c78062da1052f8b742
   replicaCount: 1
   network:
     http:
