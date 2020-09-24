@@ -5,6 +5,14 @@ frontend:
   replicaCount: 1
   network:
     http:
-      servicePort: 8080
+      servicePort: 3002
       ingress:
         host: kwik-e-checkout.apps.baloise.dev
+  readinessProbe:
+    httpGet:
+      path: /healthz
+      port: http
+  livenessProbe:
+    httpGet:
+      path: /healthz
+      port: http

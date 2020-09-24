@@ -5,7 +5,7 @@ frontend:
   replicaCount: 1
   network:
     http:
-      servicePort: 8080
+      servicePort: 3000
       ingress:
         host: kwik-e-list.apps.baloise.dev
   readinessProbe:

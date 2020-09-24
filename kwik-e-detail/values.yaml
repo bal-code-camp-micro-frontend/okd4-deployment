@@ -5,14 +5,14 @@ frontend:
   replicaCount: 1
   network:
     http:
-      servicePort: 8080
+      servicePort: 3001
       ingress:
         host: kwik-e-detail.apps.baloise.dev
   readinessProbe:
     httpGet:
       path: /actuator/health
-      port: 8080
+      port: http
   livenessProbe:
     httpGet:
       path: /actuator/health
-      port: 8080
+      port: http
