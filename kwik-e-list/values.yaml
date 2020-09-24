@@ -11,8 +11,8 @@ frontend:
   readinessProbe:
     httpGet:
       path: /healthz
-      port: 8080
+      port: http
   livenessProbe:
     httpGet:
       path: /healthz
-      port: 8080
+      port: http
