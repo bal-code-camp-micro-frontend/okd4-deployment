@@ -1,7 +1,7 @@
 api:
   image:
     repository: balcodecampmicrofrontend/kwik-e-api
-    tag: 4b030132c3bee5068995b22092199876fd51401d
+    tag: 800fa0064082f337accc2d3cdc7798edec081c5a
   replicaCount: 1
   network:
     http:
