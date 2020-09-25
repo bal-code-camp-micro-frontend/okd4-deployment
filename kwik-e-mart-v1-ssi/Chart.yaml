@@ -1,0 +1,16 @@
+apiVersion: v2
+name: kwik-e-mart-v1-ssi
+version: 0.0.0
+dependencies:
+  - name: generic-chart
+    version: 2.0.0
+    repository: https://registry.baloise.dev/chartrepo/library
+    alias: kwik-e-proxy
+  - name: generic-chart
+    version: 2.0.0
+    repository: https://registry.baloise.dev/chartrepo/library
+    alias: kwik-e-list
+  - name: generic-chart
+    version: 2.0.0
+    repository: https://registry.baloise.dev/chartrepo/library
+    alias: kwik-e-detail

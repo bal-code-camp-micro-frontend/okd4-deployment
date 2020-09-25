@@ -1,0 +1,75 @@
+kwik-e-proxy:
+  image:
+    repository: balcodecampmicrofrontend/kwik-e-proxy
+    tag: 469f944d04ee95fc0ac5702dec84fb501ca5b29c
+  replicaCount: 1
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: kwik-e-mart-v2-webcomponents-proxy.apps.baloise.dev
+  readinessProbe:
+    httpGet:
+      path: /healthz
+      port: 8080
+  livenessProbe:
+    httpGet:
+      path: /healthz
+      port: 8080
+  volumeMounts:
+    - name: proxy-configmap-volume
+      mountPath: /opt/bitnami/nginx/conf/server_blocks
+  volumes:
+    - name: proxy-configmap-volume
+      configMap:
+        name: proxy-configmap
+
+kwik-e-list:
+  image:
+    repository: balcodecampmicrofrontend/kwik-e-list
+    tag: e594c8fd7c488739d68d3c30bbec3a782e816948
+  replicaCount: 1
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: kwik-e-mart-v2-webcomponents-list.apps.baloise.dev
+  readinessProbe:
+    httpGet:
+      path: /healthz
+      port: 8080
+  livenessProbe:
+    httpGet:
+      path: /healthz
+      port: 8080
+
+kwik-e-detail:
+  image:
+    repository: balcodecampmicrofrontend/kwik-e-detail
+    tag: 54e0ba51593d7e0791c5e7a2708db222231c98ad
+  replicaCount: 1
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: kwik-e-mart-v2-webcomponents-detail.apps.baloise.dev
+  readinessProbe:
+    httpGet:
+      path: /actuator/health
+      port: 8080
+  livenessProbe:
+    httpGet:
+      path: /actuator/health
+      port: 8080
+
+kwik-e-checkout:
+  image:
+    repository: balcodecampmicrofrontend/kwik-e-checkout
+    tag: be33278f2d3b75ed6e55457e20a99e70002d9dc4
+  replicaCount: 1
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: kwik-e-mart-v2-webcomponents-checkout.apps.baloise.dev
+

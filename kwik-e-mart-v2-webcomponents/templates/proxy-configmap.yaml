@@ -1,0 +1,28 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: proxy-configmap
+data: 
+  my_server_block.conf: |-
+    server {
+      listen 8080;
+      ssi on;
+
+      location /healthz {
+        return 200 'woop woop!';
+        add_header Content-Type text/plain;
+      }
+
+      location /l/ {
+        proxy_pass  https://kwik-e-mart-v2-webcomponents-list.apps.baloise.dev;
+      }
+      location /d/ {
+        proxy_pass  https://kwik-e-mart-v2-webcomponents-detail.apps.baloise.dev;
+      }
+      location /c/ {
+        proxy_pass  https://kwik-e-mart-v2-webcomponents-checkout.apps.baloise.dev;
+      }
+      location / {
+        proxy_pass  https://kwik-e-mart-v2-webcomponents-list.apps.baloise.dev/l;
+      }
+    }
