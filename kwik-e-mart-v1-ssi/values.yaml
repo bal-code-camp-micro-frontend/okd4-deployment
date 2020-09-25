@@ -61,15 +61,3 @@ kwik-e-detail:
     httpGet:
       path: /actuator/health
       port: 8080
-
-kwik-e-checkout:
-  image:
-    repository: balcodecampmicrofrontend/kwik-e-checkout
-    tag: c7802ae6621c63f9bd554e4c10aa1fcbcfb22a59
-  replicaCount: 1
-  network:
-    http:
-      servicePort: 8080
-      ingress:
-        host: kwik-e-mart-v1-ssi-checkout.apps.baloise.dev
-
